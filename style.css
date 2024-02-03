@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .Box {
+    background-image: url("./assets/crash.png");
+    height: 180px;
+    width: 240px;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: top;
+
+    background-repeat: no-repeat;
+    margin: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.628);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .first {
+    background-position: top !important;
+  }
+  .box-head {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .two {
+    background-image: url("assets/snare.png");
+  }
+  .three {
+    background-image: url("assets/tom.png");
+  }
+  .four {
+    background-image: url("assets/kick.png");
+  }

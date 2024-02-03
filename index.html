@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produce Sound </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="style.css">
+
+   
+  </style>
+  <body>
+    <div class="box-head">
+      <div class="Box one">
+        <h1>Crash</h1>
+
+        <audio src="./assets/crash.mp3"></audio>
+      </div>
+      <div class="Box two">
+        <h1>Snare</h1>
+        <audio src="./assets/snare.mp3"></audio>
+      </div>
+      <div class="Box three">
+        <h1>Tom</h1>
+        <audio src="./assets/tom.mp3"></audio>
+      </div>
+      <div class="Box four">
+        <h1>Kick</h1>
+        <audio src="./assets/kick.mp3"></audio>
+      </div>
+    </div>
+    <script>
+      
+
+      const boxes = document.querySelectorAll(".Box");
+
+      // const obj = {
+      //   first: "crash",
+      //   second: "snare",
+      //   third: "tom",
+      //   four: "kick",
+      // };
+
+      boxes.forEach((box) => {
+        box.addEventListener("click", function () {
+          const audio = this.querySelector("audio");
+          if (audio) {
+            audio.currentTime = 0;
+            audio.play();
+          }
+        });
+      });
+
+     
+    </script>
+  </body>
+</html>
